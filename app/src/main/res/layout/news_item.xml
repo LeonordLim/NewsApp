@@ -10,10 +10,12 @@
 
     <ImageView
         android:id="@+id/ImageViewNews"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-
+        android:layout_width="125dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="5dp"
+        android:scaleType="centerCrop"
+        android:paddingTop="5dp"
         android:paddingLeft="10dp"
         android:src="@mipmap/ic_launcher"/>
 
@@ -28,6 +30,8 @@
             style="@style/HeadlineText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
             tools:text="The Resurgence of Manchester United in 1990 " />
 
         <TextView

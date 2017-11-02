@@ -192,9 +192,14 @@ public class QueryUtils {
 
                 JSONObject fieldsJSON = currentNews.getJSONObject("fields");
                 String title = fieldsJSON.getString("headline");
-                String thumbnailUrl = fieldsJSON.getString("thumbnail");
 
-                Bitmap thumbnail = fetchingImage(thumbnailUrl);
+                //Below method using picaso for fetching thumbnail
+                String thumbnail= fieldsJSON.getString("thumbnail");
+
+                // Using bitmap factory for fetching thumnail
+                //String thumbnailUrl= fieldsJSON.getString("thumbnail");
+                //Bitmap thumbnail = fetchingImage(thumbnailUrl);
+
                 // Create a new {@link News} object with the magnitude, location, time,
                 // and url from the JSON response.
                 News news = new News(title, section, currentDate, artikelUrl,NewsAuthor,thumbnail);
