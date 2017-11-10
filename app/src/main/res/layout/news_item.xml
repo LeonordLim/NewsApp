@@ -38,7 +38,7 @@
             android:id="@+id/textViewSection"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textViewHeadline"
+            android:layout_below="@+id/textViewDate"
             style="@style/NewsProfile"
             tools:text="Football " />
 
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             style="@style/NewsProfile"
             tools:text="24 oktober 20011"
-            android:layout_alignBottom="@+id/textViewSection"
+            android:layout_below="@+id/textViewHeadline"
             android:layout_alignParentRight="true"/>
 
     </RelativeLayout>

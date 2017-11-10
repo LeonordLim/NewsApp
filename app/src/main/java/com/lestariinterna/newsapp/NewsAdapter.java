@@ -32,9 +32,9 @@ public class NewsAdapter extends ArrayAdapter<News> {
         if(dataItem ==null){
             dataItem = LayoutInflater.from(getContext()).inflate(R.layout.news_item,parent,false);
         }
-        ViewGroup.LayoutParams params = dataItem.getLayoutParams();
-        params.height=150;
-        dataItem.setLayoutParams(params);
+//        ViewGroup.LayoutParams params = dataItem.getLayoutParams();
+//        params.height=150;
+//        dataItem.setLayoutParams(params);
 
         News currentNews= getItem(position);
 
@@ -51,11 +51,12 @@ public class NewsAdapter extends ArrayAdapter<News> {
         //Bitmap thumbnailImage = currentNews.getThumbnail();
        // thumbnail.setImageBitmap(thumbnailImage);
         String url = currentNews.getThumbnail();
-        if (url != null){
-            Picasso.with(getContext()).load(url).into(thumbnail);
+        if (url.isEmpty()){
+
+            thumbnail.setImageDrawable(null);
         }
         else
-            thumbnail.setImageDrawable(null);
+            Picasso.with(getContext()).load(url).into(thumbnail);
         TextView author = (TextView)dataItem.findViewById(R.id.textViewAuthor);
         author.setText(currentNews.getAuthor());
 

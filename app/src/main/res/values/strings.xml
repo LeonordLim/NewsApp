@@ -1,3 +1,46 @@
 <resources>
     <string name="app_name">NewsApp</string>
+    <string name="setting_menu_item">Settings</string>
+
+    <!-- Settings Activity Title [CHAR LIMIT=NONE] -->
+    <string name="settings_title">News Settings</string>
+
+    <!-- Strings For Order-By Preference [CHAR LIMIT=30] -->
+    <string name="settings_order_by_label">Order By</string>
+    <string name="settings_order_by_key" translatable="false">order_by</string>
+    <string name="settings_order_by_default" translatable="false">@string/settings_order_by_latest_value</string>
+
+    <!-- Strings For Sections Preference [CHAR LIMIT=30] -->
+    <string name="settings_sections_by_label">Sections</string>
+    <string name="settings_sections_key" translatable="false">sections</string>
+    <string name="settings_sections_default" translatable="false">@string/pref_section_world_value</string>
+
+    <!-- Label for order-by Latest option [CHAR LIMIT=20] -->
+    <string name="settings_order_by_latest_label">newest</string>
+    <string name="settings_order_by_latest_value" translatable="false">newest</string>
+
+    <!-- Label for order-by Oldest option [CHAR LIMIT=20] -->
+    <string name="settings_order_by_oldest_label">oldest</string>
+    <string name="settings_order_by_oldest_value" translatable="false">oldest</string>
+
+    <!--Label for world section-->
+    <string name="pref_section_world">world</string>
+    <string name="pref_section_world_value" translatable="false">world</string>
+
+    <!--Label for football section-->
+    <string name="pref_section_football">football</string>
+    <string name="pref_section_football_value" translatable="false">football</string>
+
+    <!--Label for business section-->
+    <string name="pref_section_business">business</string>
+    <string name="pref_section_business_value" translatable="false">business</string>
+
+    <!--Label for culture section-->
+    <string name="pref_section_culture">culture</string>
+    <string name="pref_section_culture_value" translatable="false">culture</string>
+
+    <!--Label for lifestyle section-->
+    <string name="pref_section_lifestyle">lifestyle</string>
+    <string name="pref_section_lifestyle_value" translatable="false">lifestyle</string>
+
 </resources>

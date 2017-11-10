@@ -44,7 +44,7 @@ public class QueryUtils {
     public static List<News> fetchEarthquakeData(String requestUrl) {
         // Create URL object
         URL url = createUrl(requestUrl);
-        Log.v("Test2",url.toString());
+        Log.v(LOG_TAG,url.toString());
 
         // Perform HTTP request to the URL and receive a JSON response back
         String jsonResponse = null;
@@ -194,7 +194,7 @@ public class QueryUtils {
                 String title = fieldsJSON.getString("headline");
 
                 //Below method using picaso for fetching thumbnail
-                String thumbnail= fieldsJSON.getString("thumbnail");
+                String thumbnail= fieldsJSON.optString("thumbnail");
 
                 // Using bitmap factory for fetching thumnail
                 //String thumbnailUrl= fieldsJSON.getString("thumbnail");
